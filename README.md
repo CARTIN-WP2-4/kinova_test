@@ -48,18 +48,16 @@ ADD VIDEO
 
 (Check if file has to be downloaded from folder or website.)
 
-<p align="right">(<a href="#readme-top">🔼 back to top</a>)</p>
-
 #### Kinova Kortex API
-Visit this link and download the latest version of kinova (Go to Code and download the zip file).
+Visit this <a href="https://github.com/Kinovarobotics/kortex">page</a> and download the latest version of the Kinova Kortex code.
 
-(Not sure if this step is even needed.)
+ADD VIDEO
 
-ADD LINK
+Next, we need to download the latest version of the Kortex API. For this, proceed to the <a href="https://artifactory.kinovaapps.com/ui/repos/tree/General/generic-public%2Fkortex%2FAPI%2F2.3.0%2Fwindows_x86-64_msvc-2019.zip">Artifactory</a> page. To download the correct C++ API, you have to select the package for your platform/architecture from the left-hand side and then click Download on the right-hand side.
 
-When following the link to Artifactory, to download the correct C++ API, you have to select the package for your architecture on the left-hand side tree view and then click Download on the right-hand side.
-
-ADD IMAGE
+<p align="center">
+  <img src="./data/KinovaAPI.png">
+</p>
 
 ### Build
 #### CMakeList
@@ -67,7 +65,7 @@ ADD IMAGE
 #### Robotics Library
 
 ### Run
-ADD EXAMPLE CODE TO TEST AND RUN
+ADD EXAMPLE CODE TO TEST IF INSTALLATION IS SUCCESSFULLY DONE.
 
 ## Contributing
 Contributions are always welcome. If you have any suggestions to improve the instructions written here, please follow the steps given below. If you do not have any definite changes to make and would like to comment or discuss about any particular content, please feel free to open an issue with the **enhancement** tag.
@@ -85,5 +83,7 @@ Contributions are always welcome. If you have any suggestions to improve the ins
 
 ## License
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details.
+
+<p align="right">(<a href="#readme-top">🔼 Back to Top</a>)</p>
 
 
