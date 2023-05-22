@@ -10,6 +10,8 @@ For a smooth installation process, please follow the instructions in the same or
 #### Visual Studio Community
 Download and install Visual Studio Community 2019. For the current version (2022) or older versions (< 2019), please refer to this <a href="https://visualstudio.microsoft.com/downloads/">link</a>.
 
+---
+
 #### CMake
 Refere to the instructions <a href="https://cmake.org/install/">here</a> to install CMake depending on the platform you are using. For Windows users, please make sure that you select the option of adding CMake to the system PATH as shown below.
 
@@ -18,6 +20,8 @@ Refere to the instructions <a href="https://cmake.org/install/">here</a> to inst
 </p>
 
 (Check if it can be updated to the latest version 3.26.4.)
+
+---
 
 #### GCC Compiler
 To install GCC 5.4 on Linux platform
@@ -63,9 +67,23 @@ ADD IMAGE
 #### Robotics Library
 
 ### Run
+ADD EXAMPLE CODE TO TEST AND RUN
 
 ## Contributing
+Contributions are always welcome. If you have any suggestions to improve the instructions written here, please follow the steps given below. If you do not have any definite changes to make and would like to comment or discuss about any particular content, please feel free to open an issue with the **enhancement** tag.
+
+1. Create a fork of the project.
+2. Clone the fork on your local machine.
+3. Create a new branch to work on.
+4. Create a new markdown file with your username as the file name.
+5. Add a description of changes you would like and save the file.
+4. Commit your changes with the proper message.
+5. Push your branch to the fork.
+6. From your fork, open a pull request and wait for approval.
+
+(Check these instructions with Harsha.)
 
 ## License
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details.
 
 
