@@ -55,8 +55,6 @@ The steps to install it are as follows:
 
 ADD VIDEO
 
-(CHECK IF THE FILE HAS TO BE DOWNLOADED FROM THE FOLDER OR THE WEBSITE.)
-
 #### Kinova Kortex API
 Visit this <a href="https://github.com/Kinovarobotics/kortex">page</a> and download the latest version of the Kinova Kortex code.
 
