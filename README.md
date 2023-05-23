@@ -3,6 +3,19 @@ Testing Kinova Installation and basic C++ coding.
 
 ## Table of Contents
 
+- [Getting Started](#getting-started)
+  - [Setup](#setup)
+    - [Visual Studio Community](#visual-studio-community)
+    - [CMake](#cmake)
+    - [GCC Compiler](#gcc-compiler)
+    - [Kinova Kortex API](#kinova-kortex-api)
+  - [Build](#build)
+    - [CMakeList](#cmakelist)
+    - [Robotics Library](#robotics-library)
+  - [Run](#run)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Getting Started
 
 ### Setup
@@ -53,7 +66,7 @@ ADD VIDEO
 #### Kinova Kortex API
 Visit this <a href="https://github.com/Kinovarobotics/kortex">page</a> and download the latest version of the Kinova Kortex code.
 
-ADD VIDEO
+![Code](./data/Kinova_Code.gif)
 
 Next, we need to download the latest version of the Kortex API. For this, proceed to the <a href="https://artifactory.kinovaapps.com/ui/repos/tree/General/generic-public%2Fkortex%2FAPI%2F2.3.0%2Fwindows_x86-64_msvc-2019.zip">Artifactory</a> page. To download the correct C++ API, you have to select the package for your platform/architecture from the left-hand side and then click Download on the right-hand side.
 
@@ -67,13 +80,9 @@ Next, we need to download the latest version of the Kortex API. For this, procee
 #### CMakeList
 Download the **CMakeLists.txt** file from the corresponding folder above and replace it in the following directory in the Kinova Kortex code folder you downloaded earlier:
 
-📦api_cpp
- ┣ 📂doc
- ┗ 📂examples
-    ┣ 📜CMakeLists.txt
-    ┣ 📜readme.md
-    ┣ 📜utilities.cpp
-    ┗ 📜utilities.h
+<p align="center">
+  <img src="./data/CMakeList.png">
+</p>
 
 ---
 
@@ -119,7 +128,7 @@ set CL=/MP
 
 ADD IMAGE
 
-8. Finally, open Visual Studio 2019 and open the ".\kortex-master\api_cpp\examples" folder. Build Cmake by going to ADD DIRECTION.
+8. Finally, open Visual Studio 2019 and open the **".\kortex-master\api_cpp\examples"** folder. Build Cmake by going to ADD DIRECTION.
 
 ---
 
