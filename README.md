@@ -48,6 +48,8 @@ ADD VIDEO
 
 (Check if file has to be downloaded from folder or website.)
 
+---
+
 #### Kinova Kortex API
 Visit this <a href="https://github.com/Kinovarobotics/kortex">page</a> and download the latest version of the Kinova Kortex code.
 
@@ -59,13 +61,72 @@ Next, we need to download the latest version of the Kortex API. For this, procee
   <img src="./data/KinovaAPI.png">
 </p>
 
+---
+
 ### Build
 #### CMakeList
+Download the **CMakeLists.txt** file from the corresponding folder above and replace it in the following directory in the Kinova Kortex code folder you downloaded earlier:
+
+📦api_cpp
+ ┣ 📂doc
+ ┗ 📂examples
+    ┣ 📜CMakeLists.txt
+    ┣ 📜readme.md
+    ┣ 📜utilities.cpp
+    ┗ 📜utilities.h
+
+---
 
 #### Robotics Library
 
+The Robotics Library has many features which are included in the all-in-one installer for your convenience.
+
+Follow the steps given below to install and build the robotics library.
+
+1. Download the Windows instlaller from this <a href="https://www.roboticslibrary.org/download">page</a>.
+
+2. Start the installer setup (you might need to run it as an administrator).
+
+<p align="center">
+  <img src="./data/RL_Installer_1.png">
+</p>
+
+<p align="center">
+  <img src="./data/RL_Installer_2.png">
+</p>
+
+3. Now, we need to make sure that we set the **PATH** and **CMAKE_PREFIX_PATH** environment variables accordingly. For this, run these commands:
+```sh
+set PATH=C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64\bin;%PATH%
+set CMAKE_PREFIX_PATH=C:\Program Files\Robotics Library\0.7.0\MSVC\14.1\x64;%CMAKE_PREFIX_PATH%
+```
+
+4. For multi core compilation support, run the following commands:
+```sh
+set VCBUILD_DEFAULT_OPTIONS=/M%NUMBER_OF_PROCESSORS%
+set CL=/MP
+```
+
+5. Next, we need to download the source code. You can download it from <a href="https://www.roboticslibrary.org/download">here</a> or visit their <a href="https://github.com/roboticslibrary/rl">Github page</a> for the latest version of the code.
+
+<p align="center">
+  <img src="./data/RL_Source_code.png">
+</p>
+
+6. Unzip the folder.
+
+7. We now need to use the CMake GUI to build from the folder we just downloaded.
+
+ADD IMAGE
+
+8. Finally, open Visual Studio 2019 and open the ".\kortex-master\api_cpp\examples" folder. Build Cmake by going to ADD DIRECTION.
+
+---
+
 ### Run
 ADD EXAMPLE CODE TO TEST IF INSTALLATION IS SUCCESSFULLY DONE.
+
+---
 
 ## Contributing
 Contributions are always welcome. If you have any suggestions to improve the instructions written here, please follow the steps given below. If you do not have any definite changes to make and would like to comment or discuss about any particular content, please feel free to open an issue with the **enhancement** tag.
@@ -80,6 +141,8 @@ Contributions are always welcome. If you have any suggestions to improve the ins
 6. From your fork, open a pull request and wait for approval.
 
 (Check these instructions with Harsha.)
+
+---
 
 ## License
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details.
