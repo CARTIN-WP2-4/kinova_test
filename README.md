@@ -21,7 +21,7 @@ Testing Kinova Installation and basic C++ coding.
 ### Setup
 For a smooth installation process, please follow the instructions in the same order as given below.
 #### Visual Studio Community
-Download and install Visual Studio Community 2019. For the current version (2022) or older versions (< 2019), please refer to this <a href="https://visualstudio.microsoft.com/downloads/">link</a>.
+Download and install Visual Studio Community 2019 from <a href="https://github.com/CARTIN-WP2-4/kinova_test/tree/main/Visual%20Studio%20Installer" target="_blank">here </a>.
 
 #### CMake
 Refere to the instructions <a href="https://cmake.org/install/">here</a> to install CMake depending on the platform you are using. For Windows users, please make sure that you select the option of adding CMake to the system PATH as shown below.
@@ -33,11 +33,6 @@ Refere to the instructions <a href="https://cmake.org/install/">here</a> to inst
 (Check if it can be updated to the latest version 3.26.4.)
 
 #### GCC Compiler
-To install GCC 5.4 on Linux platform
-```sh
-sudo apt-get install build-essential
-```
-
 To install GCC 5.4 on Windows platform
 Since GCC is not coded for the Windows OS, a GCC port of MinGW-w64 is required. The '-w64' suffix indicates that it can support both 32-bit and 64-bit environments.
 
