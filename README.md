@@ -20,24 +20,26 @@ Testing Kinova Installation and basic C++ coding.
 
 ### Setup
 For a smooth installation process, please follow the instructions in the same order as given below.
+
 #### Visual Studio Community
-Download and install Visual Studio Community 2019 from <a href="https://github.com/CARTIN-WP2-4/kinova_test/tree/main/Visual%20Studio%20Installer" target="_blank">here </a>.
+Download and install Visual Studio Community 2019 from <a href="https://github.com/CARTIN-WP2-4/kinova_test/tree/main/Visual%20Studio%20Installer" target="_blank">here</a>.
 
 #### CMake
-Refer to the instructions <a href="https://cmake.org/install/"  target="_blank">here</a> to install CMake depending on the platform you are using. For Windows users, please make sure that you select the option of adding CMake to the system PATH as shown below.
+Visit this <a href="https://github.com/CARTIN-WP2-4/kinova_test/tree/main/CMake" target="_blank">link</a> to download the Cmake installer. Please make sure that you select the option of adding CMake to the system PATH as shown below.
 
 <p align="center">
   <img src="./data/CMake_Windows_install_path.png">
 </p>
 
+You can refer to this <a href="https://cmake.org/install/" target="_blank">page</a> for additional details on the installation process for CMake on Windows platform.
+
 (Check if it can be updated to the latest version 3.26.4.)
 
 #### GCC Compiler
-To install GCC 5.4 on Windows platform
 Since GCC is not coded for the Windows OS, a GCC port of MinGW-w64 is required. The '-w64' suffix indicates that it can support both 32-bit and 64-bit environments.
 
 The steps to install it are as follows:
-1. Download the MinGW-w64 online installer from <a href="https://sourceforge.net/projects/mingw-w64/files/"  target="_blank">here</a>.
+1. Download the MinGW-w64 online installer from <a href="https://sourceforge.net/projects/mingw-w64/files/" target="_blank">here</a>.
 2. Start the installer and click **Next >** until you reach the installation options page
 3. Here, ensure that the options look exactly like the image below.
 
@@ -51,13 +53,13 @@ The steps to install it are as follows:
 ADD VIDEO
 
 #### Kinova Kortex API
-Visit this <a href="https://github.com/Kinovarobotics/kortex"  target="_blank">page</a> and download the latest version of the Kinova Kortex code.
+Visit this <a href="https://github.com/Kinovarobotics/kortex" target="_blank">page</a> and download the latest version of the Kinova Kortex code.
 
 <p align="center">
   <img src="./data/Kinova_Code.gif">
 </p>
 
-Next, we need to download the latest version of the Kortex API. For this, proceed to the <a href="https://artifactory.kinovaapps.com/ui/repos/tree/General/generic-public%2Fkortex%2FAPI%2F2.3.0%2Fwindows_x86-64_msvc-2019.zip"  target="_blank">Artifactory</a> page. To download the correct C++ API, you have to select the package for your platform/architecture from the left-hand side and then click Download on the right-hand side.
+Next, we need to download the latest version of the Kortex API. For this, proceed to the <a href="https://artifactory.kinovaapps.com/ui/repos/tree/General/generic-public%2Fkortex%2FAPI%2F2.3.0%2Fwindows_x86-64_msvc-2019.zip" target="_blank">Artifactory</a> page. To download the correct C++ API, you have to select the package for your platform/architecture from the left-hand side and then click Download on the right-hand side as shown in the image below.
 
 <p align="center">
   <img src="./data/KinovaAPI.png">
@@ -73,11 +75,9 @@ Download the **CMakeLists.txt** file from the corresponding folder above and rep
 
 #### Robotics Library
 
-The Robotics Library has many features which are included in the all-in-one installer for your convenience.
+The Robotics Library has many features which are included in the all-in-one installer for your convenience. Follow the steps given below to install and build the robotics library.
 
-Follow the steps given below to install and build the robotics library.
-
-1. Download the Windows instlaller from this <a href="https://www.roboticslibrary.org/download"  target="_blank">page</a>.
+1. Download the Windows instlaller from this <a href="https://www.roboticslibrary.org/download" target="_blank">page</a>.
 
 2. Start the installer setup (you might need to run it as an administrator).
 
@@ -101,7 +101,7 @@ set VCBUILD_DEFAULT_OPTIONS=/M%NUMBER_OF_PROCESSORS%
 set CL=/MP
 ```
 
-5. Next, we need to download the source code. You can download the latest version from this <a href="https://github.com/roboticslibrary/rl"  target="_blank">Github page</a>.
+5. Next, we need to download the source code. You can download the latest version from this <a href="https://github.com/roboticslibrary/rl" target="_blank">Github page</a>.
 
 <p align="center">
   <img src="./data/RL_Source_code.png">
